@@ -11,7 +11,7 @@ type CourseGoalsListProps = {
 function CourseGoalList({ goals, deleteHandler }: CourseGoalsListProps) {
   if (goals.length === 0) {
     return (
-      <InfoBox mode="Warning">
+      <InfoBox mode="hint">
         You have no course goals yet. Start adding some!
       </InfoBox>
     );
@@ -20,7 +20,7 @@ function CourseGoalList({ goals, deleteHandler }: CourseGoalsListProps) {
   let warningBox: ReactNode;
   if (goals.length >= 4) {
     warningBox = (
-      <InfoBox mode="hint">
+      <InfoBox mode="Warning" severity="high">
         You're collecting a lot of goals. Don't put too much on your plate!
       </InfoBox>
     );
