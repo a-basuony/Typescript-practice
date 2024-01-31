@@ -16,6 +16,7 @@ function CourseGoalList({ goals, deleteHandler }: CourseGoalsListProps) {
           </CourseGoal>
         </li>
       ))}
+      .
     </ul>
   );
 }
