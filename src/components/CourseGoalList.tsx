@@ -20,7 +20,7 @@ function CourseGoalList({ goals, deleteHandler }: CourseGoalsListProps) {
   let warningBox: ReactNode;
   if (goals.length >= 4) {
     warningBox = (
-      <InfoBox mode="Warning" severity="high">
+      <InfoBox mode="warning" severity="high">
         You're collecting a lot of goals. Don't put too much on your plate!
       </InfoBox>
     );
