@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react"; // info, warning
+import  { ReactNode } from "react"; // info, warning
 
 type HintInfoBox = {
   mode: "hint";
